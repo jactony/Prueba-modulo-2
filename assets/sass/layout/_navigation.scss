@@ -1,0 +1,47 @@
+/*Barra de navegación */
+
+.navbar{
+  background-color: $negro-sable;
+  display: flex;
+  padding: 1em 3em;
+  justify-content:space-between;
+  
+  &__logo{
+    max-width: 4em;
+  }  
+  
+  &__menu {
+    label {
+        display:none;
+    }
+  }
+  &__item {
+    min-height: 100%;
+    padding: 0.5em 3em;
+    overflow: visible;
+  
+  }
+  &__ul {
+    display: flex;
+    padding-top: 15px;
+  }
+ 
+  &__li {
+    a {
+        list-style:none ;
+        padding: 1em;
+        font-family: $ubuntu-reg;
+        font-size:1em;
+        font-weight: $ubuntu-bold;
+        text-decoration: none;
+        color: $blanco;
+        &:hover {
+            color: $tangerine;
+        }
+    }
+  }
+}
+  
+  #menu {
+    display: none;
+  }

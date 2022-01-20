@@ -1,0 +1,120 @@
+.bloque1{
+    grid-area: bloque1;
+}
+.bloque2{
+    grid-area: bloque2;
+}
+
+/* definición de área para el main en escritorio */
+
+.main{
+    width: 95%;
+    height: auto;
+    max-width: 1200px;
+    display: grid;
+    gap:1em;
+
+    grid-template-columns: repeat(12, 6fr);
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+    "bloque1 bloque1 bloque1 bloque1 bloque1 bloque1 bloque2 bloque2 bloque2 bloque2 bloque2 bloque2";
+}
+
+
+/* media query tablet < de 768 */
+
+@media (max-width: 768px) {
+
+.main{
+      
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 
+    auto
+    auto;
+          
+    grid-template-areas:
+            "bloque1 bloque1 bloque1 bloque1 bloque1 bloque1 bloque1 bloque1 bloque1 bloque1 bloque1 bloque1" 
+            
+            "bloque2 bloque2 bloque2 bloque2 bloque2 bloque2 bloque2 bloque2 bloque2 bloque2 bloque2 bloque2";
+        }
+    
+
+    /*media query de la navegacion*/
+
+.navbar {
+    display: flex;
+    width: 100%;
+
+    &__menu{
+    position: absolute;
+    text-align: right;
+    right: 5em;
+    label {
+        display: block;
+        padding-top:.5em;
+        padding-bottom: 0.5em;
+        font-size:2em;
+    }
+    }
+
+    &__item {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+  
+    &__ul {
+    list-style-type: none;
+    display: block;
+    }
+  
+    &__li {
+        a {
+        line-height: 160%;
+        text-align: left;
+        text-decoration: none;
+        color: $negro-charcoal;
+        &:hover {
+            color: rgb(151, 39, 39);
+        }
+        }
+    }
+    &__label i{
+        color: $blanco;
+        &:hover {
+            color: $orange;
+        }
+    }
+
+  }
+  
+input:checked~.navbar__item {
+    max-height: 100%;
+    background-color: $orange;
+    opacity: .8;
+  }
+
+
+
+/* footer */
+.footer{
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+
+    &__derechos{
+        padding: 10px;
+    }
+    &__legal{
+        padding: 10px;
+    }
+    &__boton{
+        margin: 10px 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+} 

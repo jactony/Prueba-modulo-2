@@ -1,0 +1,25 @@
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes traslate{
+    0%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.rotar{
+    animation: 3s rotate infinite linear;
+    transform-origin: 80% 80%;
+}
+.mover{
+    animation: 3s traslate infinite;
+    animation-direction: normal;
+}

@@ -1,0 +1,151 @@
+
+.main{
+    /* background-color: rgb(92, 152, 201);
+    border:5px solid #000; */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.bloque1{
+    /* padding-top: .5em; */
+    border:2px solid $negro-sable;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: rgb(200, 222, 236); */
+
+    &__art{
+        /* background-color: rgb(228, 225, 64); */
+        border:1px solid $negro-sable;
+        margin: 4px 4px;
+        
+    }
+    &__art h3{
+        font-family: $poppins;
+        font-weight: $poppins-bold;
+        line-height: 120%;
+        @include relative-converter(font-size, rem, $x-large, 16);
+        padding: 10px 5px;
+        text-align: left;
+    }
+    &__art p{
+        text-align: justify;
+        padding: 5px 5px;
+    }
+    &__art h4{
+        font-family: $poppins;
+        font-weight: $poppins-bold;
+        padding: 10px 5px;
+        text-align: left;
+    }
+   
+    &__art--img1{
+            max-width: 100%;
+            text-align: center;
+        }
+
+    &__art--img2{
+        width: 100%;
+    }
+    }
+     .bloque1 i{
+        padding: 10px 10px;
+        align-items: flex-start;
+    }
+
+/* Parte Bloque2 con imágenes svg */
+.bloque2{
+    padding-top: 1em;
+    border:2px solid $negro-sable;
+    max-width: 100%;
+    
+    &__art{
+        
+    &--img{
+        max-width: 30%;
+        border: 2px solid $negro-sable;
+        border-radius: 50%;   
+    }
+    &--img2{
+        max-width: 300px;
+        padding: 10px 10px;
+    }
+
+    }
+    &__art i{
+        @include relative-converter(font-size, rem, $large, 16);
+        padding: 10px 10px;
+    }
+   
+    &__art h3{
+        font-family: $poppins;
+        font-weight: $poppins-bold;
+        @include relative-converter(font-size, rem, $large, 16);
+        padding: 10px 5px;
+        text-align: center;   
+    }
+    &__art p{
+        text-align: justify;
+        padding: 5px 5px;
+    }
+    &__art2--ul{
+        text-align: left; 
+        padding: 20px;
+        
+    }
+    &__art2--li{
+        
+        list-style: circle; 
+    }
+    &__art2--li a{
+        text-decoration:none;
+    }
+    &__art2 h3{
+        background-color: $negro-sable;
+        color: $blanco;
+        font-family: $poppins;
+        font-weight: $poppins-bold;
+        @include relative-converter(font-size, rem, $large, 16);
+        padding: 10px 5px;
+        text-align: center;   
+    } 
+}
+
+.footer{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    margin: 1em 0;
+    color: $blanco;
+    background-color: $negro-sable;
+
+&__legal{
+    display: inline-block;
+}
+
+&__legal span{
+    padding-right: 20px;
+    font-size: 12px;
+}
+&__derechos{
+    font-size: 12px;
+}
+
+&__button--bot{
+        background-color: $orange; 
+        &:hover {
+            background-color: $blanco;
+        } 
+    }
+&__boton{
+        margin: 0 10px;
+        background-color: $blanco;
+        &:hover {
+            background-color: $orange;
+        } 
+        
+    }
+
+}

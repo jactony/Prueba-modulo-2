@@ -1,0 +1,34 @@
+//main.scss Archivo manifiesto
+
+//abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+//vendors
+@import 'vendors/jquery-ui';
+/* @import 'vendors/scss-bootstrap/bootstrap'; */
+
+//Base
+@import 'base/base';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/animation';
+
+//Layout
+@import 'layout/form';
+@import 'layout/header';
+@import 'layout/main-section';
+@import 'layout/navigation';
+@import 'layout/grid';
+
+//Components
+@import 'components/buttons';
+@import 'components/inputs';
+
+//Pages
+@import 'pages/contact';
+@import 'pages/home';
+
+//Themes
+@import 'themes/admin';
+@import 'themes/theme';
